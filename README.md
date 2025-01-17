@@ -136,6 +136,11 @@ If you encounter any issues:
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a pull request.
 
+##OUTPUTS
+
+![WhatsApp Image 2025-01-17 at 14 23 41_9f18168f](https://github.com/user-attachments/assets/3790b577-26ec-4393-b55e-1a54dbb598be)
+
+
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
