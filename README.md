@@ -136,10 +136,14 @@ If you encounter any issues:
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a pull request.
 
-##OUTPUTS
-
+## OUTPUTS
+POST GENERATION
 ![WhatsApp Image 2025-01-17 at 14 23 41_9f18168f](https://github.com/user-attachments/assets/3790b577-26ec-4393-b55e-1a54dbb598be)
+![WhatsApp Image 2025-01-17 at 14 25 37_11878f97](https://github.com/user-attachments/assets/d1477b6f-b0c7-4068-a1bd-4c5585836e63)
 
+COMMENT GENERATION
+![WhatsApp Image 2025-01-17 at 14 52 21_b855f42c](https://github.com/user-attachments/assets/da7d255a-7acf-4f9c-a1c6-4f3232b8e1fe)
+![WhatsApp Image 2025-01-17 at 15 04 10_aba44a2b](https://github.com/user-attachments/assets/404b6dc4-e992-4557-b32e-802a07e48c9a)
 
 ## License
 
