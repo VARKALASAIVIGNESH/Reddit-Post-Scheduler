@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Post Scheduler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Reddit Post Scheduler</h1>
+        <form id="postForm" class="mt-4">
+            <div class="mb-3">
+                <label for="topic" class="form-label">Topic</label>
+                <input type="text" class="form-control" id="topic" name="topic" placeholder="Enter a topic" required>
+            </div>
+            <div class="mb-3">
+                <label for="subreddit" class="form-label">Subreddit</label>
+                <input type="text" class="form-control" id="subreddit" name="subreddit" placeholder="Enter subreddit (without 'r/')" required>
+            </div>
+            <div class="mb-3">
+                <label for="post_time" class="form-label">Post Time</label>
+                <input type="datetime-local" class="form-control" id="post_time" name="post_time" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Schedule Post</button>
+        </form>
+        <div class="mt-3" id="responseMessage" style="display: none;">
+            <div class="alert" role="alert"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('postForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            const responseMessage = document.getElementById('responseMessage');
+            const alertBox = responseMessage.querySelector('.alert');
+
+            try {
+                const response = await fetch('/generate_post', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (response.ok) {
+                    alertBox.className = 'alert alert-success';
+                    alertBox.textContent = result.message;
+                } else {
+                    alertBox.className = 'alert alert-danger';
+                    alertBox.textContent = result.error || 'An error occurred.';
+                }
+            } catch (error) {
+                alertBox.className = 'alert alert-danger';
+                alertBox.textContent = 'Failed to schedule post. Please try again later.';
+            }
+
+            responseMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
