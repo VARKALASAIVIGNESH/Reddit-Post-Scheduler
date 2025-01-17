@@ -22,8 +22,8 @@ Before you begin, ensure you have met the following requirements:
 ### 1. Clone the Repository
 First, clone this repository to your local machine:
 ```bash
-git clone https://github.com/your-username/reddit-post-scheduler.git
-cd reddit-post-scheduler
+git clone https://github.com/VARKALASAIVIGNESH/SYNKRIT-TASK.git
+cd SYNKRIT-TASK
 ```
 
 ### 2. Create a Virtual Environment
@@ -36,7 +36,7 @@ python -m venv venv
 ### 3. Activate the Virtual Environment
 - On **Windows**, run:
 ```bash
-venv\Scripts\activate
+.\venv\Scripts\activate
 ```
 - On **Mac/Linux**, run:
 ```bash
