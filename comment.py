@@ -9,15 +9,15 @@ import time
 logging.basicConfig(level=logging.INFO)
 
 # Reddit API credentials
-REDDIT_CLIENT_ID = 'nj1BLntGQjbUs8z4U-cTrg'
-REDDIT_CLIENT_SECRET = '2B5qe6hR2rPsC4XYTflZQIV29OkIag'
-REDDIT_USERNAME = 'Feisty-Shelter9567'
-REDDIT_PASSWORD = '55724@28'
-REDDIT_USER_AGENT = 'Reddit AI Bot by Feisty-Shelter9567'
+REDDIT_CLIENT_ID = ''
+REDDIT_CLIENT_SECRET = ''
+REDDIT_USERNAME = ''
+REDDIT_PASSWORD = ''
+REDDIT_USER_AGENT = ''
 
 # Groq API credentials
 GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
-GROQ_API_KEY = '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'
+GROQ_API_KEY = ''
 MODEL = 'llama3-8b-8192'
 
 # Reddit API initialization
